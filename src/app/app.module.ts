@@ -16,8 +16,8 @@ import { App1SharedModule } from 'projects/sub-app/src/app/app.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule,
     App1SharedModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [
     StatusBar,

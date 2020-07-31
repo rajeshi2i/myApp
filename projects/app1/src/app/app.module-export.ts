@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 
 import { App1Component } from './app.component';
 import {CommonModule} from '@angular/common';
@@ -15,9 +16,11 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     App1Component,
-    FirstComponent
+    FirstComponent,
+    HomeComponent
   ],
   imports: [
+    IonicModule.forRoot(),
     CommonModule,
     RouterModule.forChild(routes),
   ],

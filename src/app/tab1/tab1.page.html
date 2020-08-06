@@ -7,10 +7,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-row class="ion-margin-bottom">
+  <h1>Ionic Core App</h1>
+  <ion-row class="ion-margin-bottom ion-margin-top">
     <ion-text>Environment Variable: <b>{{envVar}}</b></ion-text>
   </ion-row>
   <ion-row class="ion-margin-bottom">
-    <ion-button (click)="navigateToApp1()" color="primary">Navigate to Sub-App</ion-button>
+    <ion-button expand="block" (click)="navigateToApp1()" color="primary">Navigate to Sub-App</ion-button>
   </ion-row>
 </ion-content>

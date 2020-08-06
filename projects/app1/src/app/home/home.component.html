@@ -1,6 +1,16 @@
-<ion-content>
-  <p>
-    home works!
-  </p>
-  <ion-button (click)="gotoFirstComponent()">First</ion-button>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sub App Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-row class="ion-margin-bottom">
+    <ion-text>Sub App Home Page Content</ion-text>
+  </ion-row>
+  <ion-row class="ion-margin-bottom">
+    <ion-button (click)="gotoFirstComponent()">Back to Sub App</ion-button>
+  </ion-row>
 </ion-content>

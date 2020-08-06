@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  testEnv: 'sub-app-env-variable-dev'
+  testEnv: 'sub-app-dev-environment'
 };
 
 /*

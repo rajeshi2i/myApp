@@ -5,7 +5,8 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ionic serve",
+    "sub-app": "ionic serve --project app1",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

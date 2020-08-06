@@ -317,7 +317,15 @@
               "projects/app1/src/assets"
             ],
             "styles": [
-              "projects/app1/src/styles.css"
+              {
+                "input": "projects/app1/src/styles.css"
+              },
+              {
+                "input": "src/theme/variables.scss"
+              },
+              {
+                "input": "src/global.scss"
+              }
             ],
             "scripts": [],
             "es5BrowserSupport": true

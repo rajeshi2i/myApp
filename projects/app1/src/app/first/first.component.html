@@ -1,7 +1,24 @@
-<ion-content>
-  <p>
-    App1 works! {{showAdmin}}
-  </p>
-<ion-button (click)="toggleAdminShow()">Tab Page</ion-button>
-<ion-button (click)="gotoHome()">Home</ion-button>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sub App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-row class="ion-margin-bottom">
+    <ion-text>Sub App Page Content</ion-text>
+  </ion-row>
+  <ion-row class="ion-margin-bottom">
+    <ion-text>Environment Variable: <b>{{envVar}}</b></ion-text>
+  </ion-row>
+  <ion-row class="ion-margin-bottom">
+    <ion-col>
+      <ion-button (click)="backToCoreApp()">Back To Core App</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="gotoHome()">Sub App Home</ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
-import { App1Component } from './app.component';
+import { AppComponent } from './app.component';
 import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {FirstComponent} from './first/first.component';
@@ -15,7 +15,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    App1Component,
+    AppComponent,
     FirstComponent,
     HomeComponent
   ],
@@ -25,7 +25,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
   providers: [],
-  bootstrap: [App1Component]
+  bootstrap: [AppComponent]
 })
-export class App1Module { }
+export class SubAppModule { }
 

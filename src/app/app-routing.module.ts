@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'app1',
-    loadChildren: () => import('projects/app1/src/app/app.module-export').then(m => m.App1Module)
+    loadChildren: () => import('projects/app1/src/app/app.module-sub-app').then(m => m.SubAppModule)
   }
 ];
 @NgModule({

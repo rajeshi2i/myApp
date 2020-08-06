@@ -8,7 +8,7 @@ import { environment } from 'projects/app1/src/environments/environment';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent implements OnInit {
-  showAdmin = environment.testEnv;
+  envVar = environment.testEnv;
 
   constructor(
     private router: Router
@@ -20,7 +20,7 @@ export class FirstComponent implements OnInit {
     //
   }
 
-  toggleAdminShow() {
+  backToCoreApp() {
     this.router.navigateByUrl('/tabs/tab1');
     console.log('===============');
   }

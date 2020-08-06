@@ -6,12 +6,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-{{envVar}}
-  <ion-button (click)="navigateToApp1()">navigate to app1</ion-button>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-row class="ion-margin-bottom">
+    <ion-text>Environment Variable: <b>{{envVar}}</b></ion-text>
+  </ion-row>
+  <ion-row class="ion-margin-bottom">
+    <ion-button (click)="navigateToApp1()" color="primary">Navigate to Sub-App</ion-button>
+  </ion-row>
 </ion-content>

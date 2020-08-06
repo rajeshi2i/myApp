@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  testEnv: 'sub-app-env-variable-prod'
+  testEnv: 'sub-app-prod-environment'
 };

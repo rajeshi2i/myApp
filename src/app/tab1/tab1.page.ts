@@ -14,8 +14,8 @@ export class Tab1Page {
     private router: Router
   ) {}
 
-  navigateToApp1() {
-    this.router.navigateByUrl('app1');
+  navigateToSubApp() {
+    this.router.navigateByUrl('sub-app');
   }
 
 }

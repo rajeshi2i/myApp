@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
 
   gotoFirstComponent() {
-    this.router.navigateByUrl('/app1');
+    this.router.navigateByUrl('/sub-app');
   }
 
 }

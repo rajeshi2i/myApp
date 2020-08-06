@@ -21,12 +21,12 @@ export class FirstComponent implements OnInit {
   }
 
   backToCoreApp() {
-    this.router.navigateByUrl('/tabs/tab1');
+    this.router.navigateByUrl('/core-app/tab1');
     console.log('===============');
   }
 
   gotoHome() {
-    this.router.navigateByUrl('/app1/home');
+    this.router.navigateByUrl('/sub-app/home');
   }
 
 }

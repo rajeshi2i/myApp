@@ -4,19 +4,14 @@ import { AppComponent } from './app.component';
 import {RouterModule, Routes} from '@angular/router';
 import { CoreAppModule } from './app.module-core-app';
 
-// const routes: Routes = [
-//   { path: '', component: FirstComponent },
-//   { path: 'home', component: HomeComponent }
-// ];
-
 const routes: Routes = [
   {
-    path: 'app1',
+    path: 'sub-app',
     loadChildren: () => import('./app.module-core-app').then(m => m.CoreAppModule)
   },
   {
     path: '',
-    redirectTo: '/app1',
+    redirectTo: 'sub-app',
     pathMatch: 'full'
   }
 ];
